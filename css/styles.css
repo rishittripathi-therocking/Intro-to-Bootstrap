@@ -39,3 +39,8 @@ body {
     background-color: #512DA8;
     
 }
+
+ul.list-inline li {
+    width: 40px;
+    float: left;
+}
