@@ -24,11 +24,6 @@ address {
   margin: 0px;
   color: #0f0f0f; }
 
-ul.list-inline li {
-    width: 40px;
-    float: left;
-}
-
 body {
   padding: 50px 0px 0px 0px;
   z-index: 0; }
@@ -57,3 +52,16 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+ul.list-inline li {
+  width: 40px;
+  float: left; }
+
+.modal-header {
+  color: #FFFAF0;
+  background-color: #512DA8; }
+  .modal-header .cross {
+    color: #FFFAF0; }
+
+.modal-body {
+  background-color: #D1C4E9; }
