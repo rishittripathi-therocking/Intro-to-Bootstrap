@@ -34,7 +34,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginM">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -47,7 +47,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close cross" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form action="#">
@@ -83,7 +83,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Resesrve a Table </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close cross" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     
@@ -175,7 +175,7 @@
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
                     <form action="#">
-                        <button type="submit" class="btn btn-warning btn-block" data-toggle="modal" data-target="#reservetable" >
+                        <button type="submit" class="btn btn-warning btn-block" id="ReserveButton" >
                             Reserve Table
                         </button>
                     </form>
@@ -184,7 +184,7 @@
         </div>
     </header>
 
-    <div class="container">
+    <div class="container" id="contain">
         <div class="row row-content">
             <div class="col">
                 <div class="carousel slide" id="mycarousel" data-ride="carousel">
@@ -347,6 +347,12 @@
                     $("#carouselButton").children('span').removeClass('fa-play');
                     $("#carouselButton").children('span').addClass('fa-pause');
                 }
+            });
+             $("#ReserveButton").click(function(){
+                $("#reservetable").modal('toggle');
+            });
+            $("#loginM").click(function(){
+                $("#loginModal").modal('toggle');
             });
             
         });
